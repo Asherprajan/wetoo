@@ -20,7 +20,7 @@ function Logo() {
       <img
         src="/logo.svg"
         alt="Wetoo Technical Services logo"
-        className="h-16 w-16 rounded"
+        className="h-32 w-32 rounded" 
       />
     </Link>
   )

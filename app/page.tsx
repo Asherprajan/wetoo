@@ -28,15 +28,23 @@ export default function HomePage() {
         className="relative bg-gradient-to-r from-primary via-secondary to-primary/90 text-white py-20 lg:py-32 flex items-center justify-center"
         style={{ minHeight: "80vh" }}
       >
+        {/* Banner image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/wetoobanner.jpg')",
+            zIndex: 0
+          }}
+        />
         {/* change overlay to only 10 % black */}
-        <div className="absolute inset-0 bg-black/10" />
+        <div className="absolute inset-0 bg-black/70" />
         <div className="container mx-auto px-4 relative z-10 flex items-center justify-center min-h-[60vh]">
           <div className="max-w-4xl mx-auto text-center flex flex-col items-center justify-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Reliable Lifting Solutions for Every Industry
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Reliable Lifting Solutions for Every Industry.
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-slate-200">
-              From installation to spare parts, we lift your operations to the next level.
+            <p className="text-xl md:text-l mb-8 text-slate-100">
+              LIFTING YOUR OPERATIONS TO NEW HEIGHTS.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold">
@@ -384,71 +392,6 @@ export default function HomePage() {
           <IndustriesGrid />
         </div>
       </section>
-
-      {/* Optimized: Move industry data and grid rendering outside the component for memoization and clarity */}
-      {/* Place this above or outside the main component, e.g. at the top of the file */}
-      {/*
-      const INDUSTRIES = [
-        {
-          title: "Water",
-          items: [
-            "Water Treatment Plants",
-            "Desalination Plants",
-            "Tank Storage Facilities",
-            "Water Pumping Station",
-          ],
-          icon: <Droplet className="h-16 w-16 text-primary mx-auto mb-4" />,
-        },
-        {
-          title: "Oil & Gas",
-          items: ["Oil Refinery", "Oil Pumping Station", "Tank Storage", "Workshops"],
-          icon: <Flame className="h-16 w-16 text-primary mx-auto mb-4" />,
-        },
-        {
-          title: "General Manufacturing",
-          items: ["Aluminium", "Cement", "Glass", "Steel"],
-          icon: <Factory className="h-16 w-16 text-primary mx-auto mb-4" />,
-        },
-        {
-          title: "Energy",
-          items: [
-            "Power Stations",
-            "Renewable Energy",
-            "Energy Storage",
-            "Transmission & Distribution",
-          ],
-          icon: <Bolt className="h-16 w-16 text-primary mx-auto mb-4" />,
-        },
-        {
-          title: "Mining",
-          items: [
-            "Raw Material Handling",
-            "Processing Plants",
-            "Workshops",
-            "Fabrication",
-          ],
-          icon: <Pickaxe className="h-16 w-16 text-primary mx-auto mb-4" />,
-        },
-      ];
-
-      function IndustriesGrid() {
-        return (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {INDUSTRIES.map(({ title, items, icon }) => (
-              <div key={title} className="text-center">
-                {icon}
-                <h3 className="text-xl font-semibold mb-3">{title}</h3>
-                <ul className="text-slate-300 space-y-1">
-                  {items.map((itm) => (
-                    <li key={itm}>{itm}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        );
-      }
-      */}
 
       {/* Contact Summary */}
         <section className="relative py-24 bg-gradient-to-br from-white to-blue-100 text-primary overflow-hidden">
