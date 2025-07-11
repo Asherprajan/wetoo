@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222 82% 32%; /* #0f3695 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 242 21% 20%; /* #232242 */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 16% 92%;
+    --muted-foreground: 222 10% 40%;
+    --accent: 222 82% 32%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222 82% 32%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 242 21% 20%; /* secondary deep */
+    --foreground: 0 0% 100%;
+    --card: 242 21% 20%;
+    --card-foreground: 0 0% 100%;
+    --popover: 242 21% 18%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 222 82% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 30% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 222 24% 28%;
+    --muted-foreground: 210 10% 80%;
+    --accent: 222 82% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 222 30% 25%;
+    --input: 222 30% 25%;
+    --ring: 222 82% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Brand Color Palette Overrides */
+
+:root {
+  --brand-primary: #0f3695;
+  --brand-secondary: #232242;
+}
+
+@layer utilities {
+  /* Map old yellow utility classes to brand-primary to quickly remove yellow accents without refactoring every class */
+  .text-yellow-300,
+  .text-yellow-400,
+  .text-yellow-500,
+  .text-yellow-600 {
+    color: var(--brand-primary) !important;
+  }
+
+  .bg-yellow-50,
+  .bg-yellow-100,
+  .bg-yellow-200,
+  .bg-yellow-300,
+  .bg-yellow-400,
+  .bg-yellow-500,
+  .bg-yellow-600 {
+    background-color: var(--brand-primary) !important;
+  }
+
+  .border-yellow-100,
+  .border-yellow-200,
+  .border-yellow-400 {
+    border-color: var(--brand-primary) !important;
+  }
+
+  .hover\:bg-yellow-500:hover,
+  .hover\:bg-yellow-600:hover,
+  .group-hover\:bg-yellow-200:hover {
+    background-color: shade(var(--brand-primary), 0.9) !important;
+  }
+}
+
+/* Focus styles for accessibility */
+.focus-visible:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
