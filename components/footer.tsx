@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Users, Wrench, Headphones, Shield } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -10,8 +10,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 bg-yellow-500 rounded flex items-center justify-center">
-                <span className="text-black font-bold text-sm">W</span>
+              <div className="h-8 w-8 bg-primary rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">W</span>
               </div>
               <span className="font-bold text-xl">Wetoo Technical</span>
             </div>
@@ -19,7 +19,7 @@ export default function Footer() {
               Reliable lifting solutions for every industry. From installation to spare parts, we lift your operations
               to the next level.
             </p>
-            <Button asChild className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+            <Button asChild className="bg-primary hover:bg-primary/90 text-white font-semibold">
               <Link href="/contact">Get Started</Link>
             </Button>
           </div>
@@ -46,16 +46,26 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Services */}
+          {/* Our Team */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Our Services</h3>
+            <h3 className="font-semibold text-lg">Our Team</h3>
             <nav className="flex flex-col space-y-2 text-sm">
-              <span className="text-slate-300">Installation Services</span>
-              <span className="text-slate-300">Preventive Maintenance</span>
-              <span className="text-slate-300">Annual Maintenance</span>
-              <span className="text-slate-300">Emergency Support</span>
-              <span className="text-slate-300">Refurbishment</span>
-              <span className="text-slate-300">Lifespan Calculations</span>
+              <div className="flex items-center gap-2">
+                <Users className="h-4 w-4 text-primary" />
+                <span className="text-slate-300">Expert Engineers</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Wrench className="h-4 w-4 text-primary" />
+                <span className="text-slate-300">Skilled Technicians</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Headphones className="h-4 w-4 text-primary" />
+                <span className="text-slate-300">24/7 Support Team</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Shield className="h-4 w-4 text-primary" />
+                <span className="text-slate-300">Safety Officers</span>
+              </div>
             </nav>
           </div>
 
@@ -64,7 +74,7 @@ export default function Footer() {
             <h3 className="font-semibold text-lg">Contact Info</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-3">
-                <Phone className="h-4 w-4 text-yellow-500 mt-0.5" />
+                <Phone className="h-4 w-4 text-primary mt-0.5" />
                 <div>
                   <p className="text-slate-300">+971 567585319</p>
                   <p className="text-slate-300">+971 42977076</p>
@@ -72,12 +82,12 @@ export default function Footer() {
               </div>
 
               <div className="flex items-start gap-3">
-                <Mail className="h-4 w-4 text-yellow-500 mt-0.5" />
+                <Mail className="h-4 w-4 text-primary mt-0.5" />
                 <p className="text-slate-300">info@wetootech.com</p>
               </div>
 
               <div className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 text-yellow-500 mt-0.5" />
+                <MapPin className="h-4 w-4 text-primary mt-0.5" />
                 <p className="text-slate-300">
                   Belrasheed Building, AL Baraha
                   <br />
@@ -86,7 +96,7 @@ export default function Footer() {
               </div>
 
               <div className="flex items-start gap-3">
-                <Clock className="h-4 w-4 text-yellow-500 mt-0.5" />
+                <Clock className="h-4 w-4 text-primary mt-0.5" />
                 <p className="text-slate-300">
                   Sun-Thu: 8AM-6PM
                   <br />
