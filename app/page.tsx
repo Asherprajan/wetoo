@@ -180,7 +180,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {/* EOT Cranes */}
-            <Link href="/cranes/eot" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex flex-col">
+            <Link href="/products" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex flex-col">
               <div className="relative h-56">
                 <img
                   src="/eotcranes.webp"
@@ -198,7 +198,7 @@ export default function HomePage() {
             </Link>
 
             {/* Gantry Cranes */}
-            <Link href="/cranes/gantry" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex flex-col">
+            <Link href="/products" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex flex-col">
               <div className="relative h-56">
                 <img
                   src="/gantrycranes.webp"
@@ -216,7 +216,7 @@ export default function HomePage() {
             </Link>
 
             {/* JIB Cranes */}
-            <Link href="/cranes/jib" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex flex-col">
+            <Link href="/products" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex flex-col">
               <div className="relative h-56">
                 <img
                   src="/jibcranes.webp"
@@ -235,7 +235,7 @@ export default function HomePage() {
 
             {/* Spare Parts & Specialized Cranes */}
             <div className="flex flex-col gap-8">
-              <Link href="/spare-parts" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex-1 flex flex-col">
+              <Link href="/products" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex-1 flex flex-col">
                 <div className="relative h-24">
                   <img
                     src="/spareparts.webp"
@@ -251,7 +251,7 @@ export default function HomePage() {
                   </p>
                 </div>
               </Link>
-              <Link href="/cranes/specialized" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex-1 flex flex-col">
+                <Link href="/products" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex-1 flex flex-col">
                 <div className="relative h-24">
                   <img
                     src="/specializedcranes.webp"
