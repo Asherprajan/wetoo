@@ -201,7 +201,7 @@ export default function HomePage() {
             <Link href="/products" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex flex-col">
               <div className="relative h-56">
                 <img
-                  src="/gantrycranes.webp"
+                  src="/gantry-cranes.jpeg"
                   alt="Gantry Cranes"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -219,7 +219,7 @@ export default function HomePage() {
             <Link href="/products" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex flex-col">
               <div className="relative h-56">
                 <img
-                  src="/jibcranes.webp"
+                  src="/jib-cranes.jpeg"
                   alt="JIB Cranes"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -254,7 +254,7 @@ export default function HomePage() {
                 <Link href="/products" className="group relative rounded-2xl overflow-hidden shadow-xl bg-white hover:shadow-2xl transition-shadow duration-300 border-2 border-primary/20 hover:border-primary flex-1 flex flex-col">
                 <div className="relative h-24">
                   <img
-                    src="/specializedcranes.webp"
+                    src="/specialised-cranes.jpeg"
                     alt="Specialized Cranes"
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
